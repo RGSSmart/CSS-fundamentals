@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS part 2b</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;                   
+        }
+        .inner_container{
+            display: flex;
+            flex-direction: column;
+        }             
+        .p{
+            width: 100%;
+            border-color:green;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Some fancy texting*/
+        }
+        body div  * {
+            border: solid 2px;         
+        }        
+        body div div {    
+            display: flex;
+            align-items: center;
+            justify-content: center;   
+        }
+        .img {
+            border-color: blue;            
+        }
+        .w{
+            margin: 5px;
+        }
+       
+    </style>
+</head>
+<body>    
+    Update CSS to:
+    <ol>
+        <li> Move <i>fancy text</i> green box 5px from each side od the black box </li>
+        <li> Seperate <i>black box 1</i> from <i>black box 2</i> by 5px </li>
+    </ol>
+    <div class="container" >
+        <div class="inner_container" id="black_box_1">
+            <span class="w"> Hellou </span>        
+            <span class="w"> 2+2=5 </span>
+        </div>
+        <div class="inner_container" id="black_box_2">            
+            <p class="p"> Fancy text </p>
+        
+        </div>
+      
+    </div>
+</body>
+</html>
